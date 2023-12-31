@@ -1,0 +1,7 @@
+/target
+.vscode
+.env
+*.deb
+*.csv
+/deb/bin/*
+tarpaulin*.html
