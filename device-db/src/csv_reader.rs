@@ -1,7 +1,5 @@
-use crate::reader;
+use crate::{DataReader, DataReturn, MeasurementEntry};
 use csv::Reader;
-pub use reader::DataReader;
-use reader::{DataReturn, MeasurementEntry};
 #[cfg(not(test))]
 use std::fs::OpenOptions;
 use std::{fs::File, path::PathBuf};
@@ -121,7 +119,7 @@ mod tests {
     }
 
     pub mod mock {
-        use crate::reader::MeasurementEntry;
+        use crate::MeasurementEntry;
 
         pub fn measurement_entry() -> Vec<MeasurementEntry> {
             vec![

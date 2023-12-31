@@ -5,3 +5,4 @@
 *.csv
 /deb/bin/*
 tarpaulin*.html
+Cargo.lock
